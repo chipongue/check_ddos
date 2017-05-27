@@ -3,11 +3,17 @@ Monitoring of DDoS SYN flood attacks (SYN flood attack) is a type of denial of s
 
 This Nagios plugin monitors system network connections alerting whenever a large number of SYN recv states are verified. The quantities of connections to be considered excessive are passed as arguments, and when Nagios is exceeded alert with the states warning or critical.
 
-Mandatory arguments: The following arguments must be specified when the module is executed:-W or warning used to specify the number of connections from which to consider as warning.
--C or critical used to specify the number of connections from which the result should be considered as critical.
+Mandatory arguments: The following arguments must be specified when the module is executed:
 
-Optional arguments: The following arguments are optionally invoked, as user needs:-V or – version used to query the module version.
--A or – author used to query the author's data.
+-w or --warning used to specify the number of connections from which to consider as warning.
+
+-c or --critical used to specify the number of connections from which the result should be considered as critical.
+
+Optional arguments: The following arguments are optionally invoked, as user needs:
+
+-V or --version used to query the module version.
+
+-A or --author used to query the author's data.
 
 Command-Line Execution example
 
